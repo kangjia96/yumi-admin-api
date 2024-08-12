@@ -46,4 +46,9 @@ public class ResultVO<T> implements Serializable {
     public static <T> ResultVO<T> error(int code, String msg) {
         return new ResultVO<>(code, msg, null);
     }
+
+    public static <T> ResultVO<T> error(ErrorCode errorEnum, Object ...params) {
+        // TODO 国际化支持, 根据 errorEnum 与自定义参数 params 获取国际化信息
+        return new ResultVO<>(errorEnum.getCode(), errorEnum.getMsg(), null);
+    }
 }
