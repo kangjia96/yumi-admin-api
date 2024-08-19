@@ -88,7 +88,7 @@ create table if not exists sys_user
     gender      int          null comment '性别，0男 1女 2未知',
     avatar      varchar(200) null comment '头像地址',
     remark      varchar(200) null comment '描述',
-    status      tinyint      null comment '状态，0启用 1禁用',
+    status      tinyint      null comment '状态，1启用 0禁用',
     create_time datetime     null,
     update_time datetime     null
 );

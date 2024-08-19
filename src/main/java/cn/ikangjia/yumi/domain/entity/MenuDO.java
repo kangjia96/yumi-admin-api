@@ -30,7 +30,7 @@ public class MenuDO {
     private Boolean keepAlive;
 
     private Boolean visible;
-    private Integer status;
+    private Boolean status;
 
     @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;

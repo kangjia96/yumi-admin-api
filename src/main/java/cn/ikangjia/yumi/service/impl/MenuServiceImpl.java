@@ -40,7 +40,7 @@ public class MenuServiceImpl implements MenuService {
     public List<MenuVO> getAllMenus() {
         QueryWrapper<MenuDO> wrapper = new QueryWrapper<>();
         String userId = "1";
-        wrapper.eq("status", 0);
+        wrapper.eq("status", 1);
         wrapper.orderByAsc(List.of("parent_id", "order_num"));
 
         List<MenuDO> menuList;
